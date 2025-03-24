@@ -1,0 +1,44 @@
+{
+  "name": "iot-api",
+  "version": "1.0.0",
+  "description": "backend server - iot api app",
+  "main": "server.js",
+  "scripts": {
+    "test": "iot-api",
+    "start": "nodemon --exec ./node_modules/.bin/babel-node ./src/server.js"
+  },
+  "keywords": [
+    "hospital"
+  ],
+  "author": "DungPham",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.5",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mqtt": "^5.10.1",
+    "mysql2": "^3.11.4",
+    "nodemailer": "^6.9.16",
+    "sequelize": "^6.6.2",
+    "socket.io": "^4.8.1",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/node": "^7.22.10",
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/runtime": "^7.22.10",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": "v20.17.0",
+    "npm": "v10.5.0"
+  }
+}
