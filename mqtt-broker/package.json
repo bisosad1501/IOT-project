@@ -1,0 +1,12 @@
+{
+    "name": "mqtt-broker",
+    "version": "1.0.0",
+    "description": "MQTT broker service for IOT project",
+    "main": "broker.js",
+    "scripts": {
+      "start": "node broker.js"
+    },
+    "dependencies": {
+      "aedes": "^0.48.0"
+    }
+  }

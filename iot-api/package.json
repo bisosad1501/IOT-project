@@ -10,7 +10,7 @@
   "keywords": [
     "hospital"
   ],
-  "author": "DungPham",
+  "author": "Bisosad",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
