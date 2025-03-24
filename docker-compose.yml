@@ -1,0 +1,57 @@
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 15012003
+      MYSQL_DATABASE: iot_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 15012003
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./iot-api/iot-db.sql:/docker-entrypoint-initdb.d/iot-db.sql
+    networks:
+      - iot-network
+
+  mqtt-broker:
+    build: ./mqtt-broker
+    ports:
+      - "1883:1883"
+    networks:
+      - iot-network
+
+  iot-api:
+    build: ./iot-api
+    depends_on:
+      - mysql
+      - mqtt-broker
+    ports:
+      - "8080:8080"
+    environment:
+      DB_HOST: mysql  
+      DB_PORT: 3306
+      DB_USERNAME: root  
+      DB_PASSWORD: 15012003
+      DB_DATABASE_NAME: iot_db
+      MQTT_BROKER: mqtt-broker
+    networks:
+      - iot-network
+
+  iot_front:
+    build: ./iot_front
+    depends_on:
+      - iot-api
+      - mqtt-broker
+    ports:
+      - "3000:3000"
+    networks:
+      - iot-network
+
+networks:
+  iot-network:
+    driver: bridge
+
+volumes:
+  mysql-data:

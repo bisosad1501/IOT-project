@@ -1,10 +1,11 @@
-USE `iot-db`;
+Create database iot_db;
+USE `iot_db`;
 
 CREATE TABLE Users (
     userId INT AUTO_INCREMENT PRIMARY KEY,
     userName VARCHAR(255),
     email VARCHAR(255),
-    password VARCHAR(x255),
+    password VARCHAR(255),
     deviceId VARCHAR(255)
 );
 
@@ -33,7 +34,7 @@ CREATE TABLE Rains (
 );
 
 
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (425.2,'dev001','06:00:00','2024-11-01'),
 	 (498.7,'dev001','12:00:00','2024-11-01'),
 	 (552.3,'dev001','18:00:00','2024-11-01'),
@@ -44,7 +45,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (495.4,'dev001','23:00:00','2024-11-02'),
 	 (428.0,'dev001','06:00:00','2024-11-03'),
 	 (508.5,'dev001','12:00:00','2024-11-03');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (578.0,'dev001','18:00:00','2024-11-03'),
 	 (492.0,'dev001','23:00:00','2024-11-03'),
 	 (435.0,'dev001','06:00:00','2024-11-04'),
@@ -55,7 +56,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (535.5,'dev001','12:00:00','2024-11-05'),
 	 (598.0,'dev001','18:00:00','2024-11-05'),
 	 (512.0,'dev001','23:00:00','2024-11-05');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (438.0,'dev001','06:00:00','2024-11-06'),
 	 (528.5,'dev001','12:00:00','2024-11-06'),
 	 (582.0,'dev001','18:00:00','2024-11-06'),
@@ -66,7 +67,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (482.0,'dev001','23:00:00','2024-11-07'),
 	 (427.0,'dev001','06:00:00','2024-11-08'),
 	 (505.5,'dev001','12:00:00','2024-11-08');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (562.0,'dev001','18:00:00','2024-11-08'),
 	 (488.0,'dev001','23:00:00','2024-11-08'),
 	 (433.0,'dev001','06:00:00','2024-11-09'),
@@ -77,7 +78,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (532.0,'dev001','12:00:00','2024-11-10'),
 	 (592.0,'dev001','18:00:00','2024-11-10'),
 	 (502.0,'dev001','23:00:00','2024-11-10');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (435.0,'dev001','06:00:00','2024-11-11'),
 	 (525.0,'dev001','12:00:00','2024-11-11'),
 	 (575.0,'dev001','18:00:00','2024-11-11'),
@@ -88,7 +89,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (478.0,'dev001','23:00:00','2024-11-12'),
 	 (432.0,'dev001','06:00:00','2024-11-13'),
 	 (522.0,'dev001','12:00:00','2024-11-13');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (572.0,'dev001','18:00:00','2024-11-13'),
 	 (482.0,'dev001','23:00:00','2024-11-13'),
 	 (438.0,'dev001','06:00:00','2024-11-14'),
@@ -99,7 +100,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (532.0,'dev001','12:00:00','2024-11-15'),
 	 (582.0,'dev001','18:00:00','2024-11-15'),
 	 (492.0,'dev001','23:00:00','2024-11-15');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (436.0,'dev001','06:00:00','2024-11-16'),
 	 (526.0,'dev001','12:00:00','2024-11-16'),
 	 (576.0,'dev001','18:00:00','2024-11-16'),
@@ -110,7 +111,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (480.0,'dev001','23:00:00','2024-11-17'),
 	 (434.0,'dev001','06:00:00','2024-11-18'),
 	 (524.0,'dev001','12:00:00','2024-11-18');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (574.0,'dev001','18:00:00','2024-11-18'),
 	 (484.0,'dev001','23:00:00','2024-11-18'),
 	 (438.0,'dev001','06:00:00','2024-11-19'),
@@ -121,7 +122,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (532.0,'dev001','12:00:00','2024-11-20'),
 	 (582.0,'dev001','18:00:00','2024-11-20'),
 	 (492.0,'dev001','23:00:00','2024-11-20');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (436.0,'dev001','06:00:00','2024-11-21'),
 	 (526.0,'dev001','12:00:00','2024-11-21'),
 	 (576.0,'dev001','18:00:00','2024-11-21'),
@@ -132,7 +133,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (480.0,'dev001','23:00:00','2024-11-22'),
 	 (434.0,'dev001','06:00:00','2024-11-23'),
 	 (524.0,'dev001','12:00:00','2024-11-23');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (574.0,'dev001','18:00:00','2024-11-23'),
 	 (484.0,'dev001','23:00:00','2024-11-23'),
 	 (438.0,'dev001','06:00:00','2024-11-24'),
@@ -143,7 +144,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (532.0,'dev001','12:00:00','2024-11-25'),
 	 (582.0,'dev001','18:00:00','2024-11-25'),
 	 (492.0,'dev001','23:00:00','2024-11-25');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (436.0,'dev001','06:00:00','2024-11-26'),
 	 (526.0,'dev001','12:00:00','2024-11-26'),
 	 (576.0,'dev001','18:00:00','2024-11-26'),
@@ -154,7 +155,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 	 (480.0,'dev001','23:00:00','2024-11-27'),
 	 (434.0,'dev001','06:00:00','2024-11-28'),
 	 (524.0,'dev001','12:00:00','2024-11-28');
-INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
+INSERT INTO Airs (ppm,deviceId,`time`,`date`) VALUES
 	 (574.0,'dev001','18:00:00','2024-11-28'),
 	 (484.0,'dev001','23:00:00','2024-11-28'),
 	 (438.0,'dev001','06:00:00','2024-11-29'),
@@ -168,7 +169,7 @@ INSERT INTO airs (ppm,deviceId,`time`,`date`) VALUES
 
 
 
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.5,'dev001','00:00:00','2024-11-01'),
 	 (0.2,'dev001','03:00:00','2024-11-01'),
 	 (5.0,'dev001','06:00:00','2024-11-01'),
@@ -179,7 +180,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (980.0,'dev001','17:00:00','2024-11-01'),
 	 (45.0,'dev001','18:00:00','2024-11-01'),
 	 (0.8,'dev001','21:00:00','2024-11-01');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.3,'dev001','23:00:00','2024-11-01'),
 	 (0.4,'dev001','00:00:00','2024-11-02'),
 	 (0.3,'dev001','03:00:00','2024-11-02'),
@@ -190,7 +191,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (7200.0,'dev001','15:00:00','2024-11-02'),
 	 (850.0,'dev001','17:00:00','2024-11-02'),
 	 (35.0,'dev001','18:00:00','2024-11-02');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.7,'dev001','21:00:00','2024-11-02'),
 	 (0.4,'dev001','23:00:00','2024-11-02'),
 	 (0.3,'dev001','00:00:00','2024-11-03'),
@@ -201,7 +202,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (18500.0,'dev001','12:00:00','2024-11-03'),
 	 (14200.0,'dev001','15:00:00','2024-11-03'),
 	 (1100.0,'dev001','17:00:00','2024-11-03');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (42.0,'dev001','18:00:00','2024-11-03'),
 	 (0.8,'dev001','21:00:00','2024-11-03'),
 	 (0.3,'dev001','23:00:00','2024-11-03'),
@@ -212,7 +213,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (2200.0,'dev001','09:00:00','2024-11-04'),
 	 (12500.0,'dev001','12:00:00','2024-11-04'),
 	 (9800.0,'dev001','15:00:00','2024-11-04');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (920.0,'dev001','17:00:00','2024-11-04'),
 	 (38.0,'dev001','18:00:00','2024-11-04'),
 	 (0.6,'dev001','21:00:00','2024-11-04'),
@@ -223,7 +224,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (1100.0,'dev001','07:00:00','2024-11-05'),
 	 (3200.0,'dev001','09:00:00','2024-11-05'),
 	 (16800.0,'dev001','12:00:00','2024-11-05');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (13200.0,'dev001','15:00:00','2024-11-05'),
 	 (1050.0,'dev001','17:00:00','2024-11-05'),
 	 (40.0,'dev001','18:00:00','2024-11-05'),
@@ -234,7 +235,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (5.5,'dev001','06:00:00','2024-11-06'),
 	 (850.0,'dev001','07:00:00','2024-11-06'),
 	 (2100.0,'dev001','09:00:00','2024-11-06');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (11500.0,'dev001','12:00:00','2024-11-06'),
 	 (8900.0,'dev001','15:00:00','2024-11-06'),
 	 (820.0,'dev001','17:00:00','2024-11-06'),
@@ -245,7 +246,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.2,'dev001','03:00:00','2024-11-07'),
 	 (6.0,'dev001','06:00:00','2024-11-07'),
 	 (920.0,'dev001','07:00:00','2024-11-07');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (2800.0,'dev001','09:00:00','2024-11-07'),
 	 (17200.0,'dev001','12:00:00','2024-11-07'),
 	 (13800.0,'dev001','15:00:00','2024-11-07'),
@@ -256,7 +257,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.4,'dev001','00:00:00','2024-11-11'),
 	 (0.2,'dev001','03:00:00','2024-11-11'),
 	 (5.8,'dev001','06:00:00','2024-11-11');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (980.0,'dev001','07:00:00','2024-11-11'),
 	 (2600.0,'dev001','09:00:00','2024-11-11'),
 	 (16500.0,'dev001','12:00:00','2024-11-11'),
@@ -267,7 +268,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.3,'dev001','23:00:00','2024-11-11'),
 	 (0.4,'dev001','00:00:00','2024-11-12'),
 	 (0.3,'dev001','03:00:00','2024-11-12');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (4.5,'dev001','06:00:00','2024-11-12'),
 	 (750.0,'dev001','07:00:00','2024-11-12'),
 	 (1800.0,'dev001','09:00:00','2024-11-12'),
@@ -278,7 +279,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.6,'dev001','21:00:00','2024-11-12'),
 	 (0.3,'dev001','23:00:00','2024-11-12'),
 	 (0.3,'dev001','00:00:00','2024-11-13');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.2,'dev001','03:00:00','2024-11-13'),
 	 (5.2,'dev001','06:00:00','2024-11-13'),
 	 (890.0,'dev001','07:00:00','2024-11-13'),
@@ -289,7 +290,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (38.0,'dev001','18:00:00','2024-11-13'),
 	 (0.7,'dev001','21:00:00','2024-11-13'),
 	 (0.3,'dev001','23:00:00','2024-11-13');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.4,'dev001','00:00:00','2024-11-14'),
 	 (0.2,'dev001','03:00:00','2024-11-14'),
 	 (6.1,'dev001','06:00:00','2024-11-14'),
@@ -300,7 +301,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (980.0,'dev001','17:00:00','2024-11-14'),
 	 (43.0,'dev001','18:00:00','2024-11-14'),
 	 (0.8,'dev001','21:00:00','2024-11-14');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.4,'dev001','23:00:00','2024-11-14'),
 	 (0.3,'dev001','00:00:00','2024-11-15'),
 	 (0.2,'dev001','03:00:00','2024-11-15'),
@@ -311,7 +312,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (5800.0,'dev001','15:00:00','2024-11-15'),
 	 (650.0,'dev001','17:00:00','2024-11-15'),
 	 (30.0,'dev001','18:00:00','2024-11-15');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.6,'dev001','21:00:00','2024-11-15'),
 	 (0.3,'dev001','23:00:00','2024-11-15'),
 	 (0.4,'dev001','00:00:00','2024-11-16'),
@@ -322,7 +323,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (16800.0,'dev001','12:00:00','2024-11-16'),
 	 (13500.0,'dev001','15:00:00','2024-11-16'),
 	 (940.0,'dev001','17:00:00','2024-11-16');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (40.0,'dev001','18:00:00','2024-11-16'),
 	 (0.7,'dev001','21:00:00','2024-11-16'),
 	 (0.3,'dev001','23:00:00','2024-11-16'),
@@ -333,7 +334,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (1600.0,'dev001','09:00:00','2024-11-17'),
 	 (7800.0,'dev001','12:00:00','2024-11-17'),
 	 (6200.0,'dev001','15:00:00','2024-11-17');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (680.0,'dev001','17:00:00','2024-11-17'),
 	 (31.0,'dev001','18:00:00','2024-11-17'),
 	 (0.6,'dev001','21:00:00','2024-11-17'),
@@ -344,7 +345,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (980.0,'dev001','07:00:00','2024-11-18'),
 	 (2900.0,'dev001','09:00:00','2024-11-18'),
 	 (17200.0,'dev001','12:00:00','2024-11-18');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (13800.0,'dev001','15:00:00','2024-11-18'),
 	 (960.0,'dev001','17:00:00','2024-11-18'),
 	 (42.0,'dev001','18:00:00','2024-11-18'),
@@ -355,7 +356,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (5.4,'dev001','06:00:00','2024-11-19'),
 	 (850.0,'dev001','07:00:00','2024-11-19'),
 	 (2200.0,'dev001','09:00:00','2024-11-19');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (14500.0,'dev001','12:00:00','2024-11-19'),
 	 (11800.0,'dev001','15:00:00','2024-11-19'),
 	 (880.0,'dev001','17:00:00','2024-11-19'),
@@ -366,7 +367,7 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.2,'dev001','03:00:00','2024-11-20'),
 	 (5.0,'dev001','06:00:00','2024-11-20'),
 	 (650.0,'dev001','07:00:00','2024-11-20');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (1400.0,'dev001','09:00:00','2024-11-20'),
 	 (6800.0,'dev001','12:00:00','2024-11-20'),
 	 (5500.0,'dev001','15:00:00','2024-11-20'),
@@ -377,12 +378,12 @@ INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
 	 (0.3,'dev001','00:00:00','2024-11-21'),
 	 (0.2,'dev001','03:00:00','2024-11-21'),
 	 (5.6,'dev001','06:00:00','2024-11-21');
-INSERT INTO lights (lux,deviceId,`time`,`date`) VALUES
+INSERT INTO Lights (lux,deviceId,`time`,`date`) VALUES
 	 (920.0,'dev001','07:00:00','2024-11-21'),
 	 (2700.0,'dev001','09:00:00','2024-11-21');
 
 
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','00:00:00','2024-10-22'),
 	 (0,'dev004','00:00:00','2024-10-23'),
 	 (1,'dev002','00:00:00','2024-10-24'),
@@ -393,7 +394,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev004','00:00:00','2024-10-29'),
 	 (0,'dev002','00:00:00','2024-10-30'),
 	 (1,'dev003','00:00:00','2024-10-31');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','00:00:00','2024-10-22'),
 	 (0,'dev004','00:00:00','2024-10-23'),
 	 (1,'dev002','00:00:00','2024-10-24'),
@@ -404,7 +405,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev004','00:00:00','2024-10-29'),
 	 (0,'dev002','00:00:00','2024-10-30'),
 	 (1,'dev003','00:00:00','2024-10-31');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','18:44:00','2024-11-14'),
 	 (0,'dev001','01:52:00','2024-11-16'),
 	 (1,'dev001','12:19:00','2024-11-15'),
@@ -415,7 +416,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','12:57:00','2024-11-14'),
 	 (1,'dev001','05:56:00','2024-11-20'),
 	 (0,'dev001','03:33:00','2024-11-11');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','06:59:00','2024-11-17'),
 	 (0,'dev001','18:32:00','2024-11-15'),
 	 (0,'dev001','13:55:00','2024-11-13'),
@@ -426,7 +427,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','04:28:00','2024-11-19'),
 	 (1,'dev001','13:10:00','2024-11-20'),
 	 (1,'dev001','09:26:00','2024-11-18');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','12:06:00','2024-11-18'),
 	 (1,'dev001','17:23:00','2024-11-16'),
 	 (1,'dev001','05:05:00','2024-11-18'),
@@ -437,7 +438,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','13:28:00','2024-11-20'),
 	 (0,'dev001','05:15:00','2024-11-12'),
 	 (0,'dev001','07:28:00','2024-11-15');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','09:55:00','2024-11-19'),
 	 (1,'dev001','09:17:00','2024-11-20'),
 	 (0,'dev001','19:30:00','2024-11-20'),
@@ -448,7 +449,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','01:24:00','2024-11-15'),
 	 (0,'dev001','08:28:00','2024-11-15'),
 	 (1,'dev001','11:54:00','2024-11-15');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','07:07:00','2024-11-19'),
 	 (0,'dev001','20:54:00','2024-11-15'),
 	 (1,'dev001','21:07:00','2024-11-15'),
@@ -459,7 +460,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','15:21:00','2024-11-19'),
 	 (1,'dev001','02:43:00','2024-11-11'),
 	 (0,'dev001','10:16:00','2024-11-20');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','13:19:00','2024-11-18'),
 	 (1,'dev001','16:02:00','2024-11-18'),
 	 (1,'dev001','07:52:00','2024-11-11'),
@@ -470,7 +471,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','21:43:00','2024-11-14'),
 	 (1,'dev001','08:50:00','2024-11-12'),
 	 (0,'dev001','21:52:00','2024-11-14');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','04:07:00','2024-11-15'),
 	 (0,'dev001','15:38:00','2024-11-15'),
 	 (1,'dev001','20:07:00','2024-11-19'),
@@ -481,7 +482,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','20:51:00','2024-11-14'),
 	 (0,'dev001','06:57:00','2024-11-14'),
 	 (0,'dev001','15:19:00','2024-11-20');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','13:28:00','2024-11-17'),
 	 (0,'dev001','10:01:00','2024-11-13'),
 	 (1,'dev001','21:53:00','2024-11-18'),
@@ -492,7 +493,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','22:55:00','2024-11-16'),
 	 (1,'dev001','10:09:00','2024-11-12'),
 	 (1,'dev001','12:51:00','2024-11-13');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','09:04:00','2024-11-13'),
 	 (1,'dev001','00:16:00','2024-11-15'),
 	 (0,'dev001','07:08:00','2024-11-15'),
@@ -503,7 +504,7 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','06:58:00','2024-11-16'),
 	 (0,'dev001','20:45:00','2024-11-16'),
 	 (0,'dev001','00:37:00','2024-11-20');
-INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
+INSERT INTO Rains (status,deviceId,`time`,`date`) VALUES
 	 (1,'dev001','22:47:00','2024-11-16'),
 	 (0,'dev001','17:55:00','2024-11-16'),
 	 (1,'dev001','22:46:00','2024-11-19'),
@@ -515,9 +516,9 @@ INSERT INTO rains (status,deviceId,`time`,`date`) VALUES
 	 (0,'dev001','06:47:00','2024-11-15'),
 	 (0,'dev001','23:42:00','2024-11-19');
 
-INSERT INTO users (userName,email,password,deviceId) VALUES
-	 ('DungP','user1@example.com','123456','dev001'),
+INSERT INTO Users (userName,email,password,deviceId) VALUES
+	 ('bisosad','thangdz1501@gmail.com','123456','dev001'),
 	 ('Anh','user2@example.com','123456','dev002'),
 	 ('huy','user3@example.com','123456','dev003'),
 	 ('Loi','user4@example.com','123456','dev004'),
-	 ('Loc','user5@example.com','123456','dev005'),
+	 ('Loc','user5@example.com','123456','dev005');
